@@ -202,16 +202,6 @@ switch ptb.SetUp
         error('No proper Set up was selected');
 end
 
-    % Check if keyboardIndices is empty
-    if isempty(keyboardIndices)
-    % Handle the case where no keyboard is found
-        disp('No keyboard found.');
-        ptb.Keyboard1 = [];
-    else
-    % Use the first keyboard index
-        ptb.Keyboard1 = keyboardIndices(1);
-    end
-
 % Get the size of the on screen window in pixels, these are the last two
 % numbers in "windowRect" and "rect"
 [ptb.screenXpixels, ptb.screenYpixels] = Screen('WindowSize', ptb.window);

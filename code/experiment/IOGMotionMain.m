@@ -130,9 +130,6 @@ while true
         otherwise
             error('You selected an undefined scenario!');
     end
-    
-    design.whiteBackground = ones(size(x));
-    whiteBackgroundTex = Screen('MakeTexture', ptb.window, design.whiteBackground);
 
     % Select image buffer for true color image:
     Screen('SelectStereoDrawBuffer', ptb.window, 0);
